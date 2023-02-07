@@ -5,8 +5,7 @@
 5. your encrypted file should be present in encrypted_files folder.
 
 
-
-
+To Decrypt Files
 1. if you want to check the decrypted file. copy or move that file in file_to_decrypt_and_check folder.
 2. go to main file again and uncomment the decode_files function and comment the encode_files function
 3. run the file.
