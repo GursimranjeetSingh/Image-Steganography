@@ -117,7 +117,10 @@ def encode_files(secret_data):
 
 
 def decode_files():
-    files = os.listdir('file_to_decrypt_and_check')
+    current_working_directory = os.getcwd()
+    full_path=os.path.join(current_working_directory,'file_to_decrypt_and_check')
+
+    files = os.listdir(full_path)
     for i in files:
         input_image=os.path.join(base_dir, 'file_to_decrypt_and_check', i)
         decoded_data = decode(image_name=input_image)
